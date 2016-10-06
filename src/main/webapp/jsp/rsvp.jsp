@@ -119,11 +119,17 @@
                     </div>
                     <div class="form_row full">
                     <label>INSERTA LA DIRECCI&Oacute;N DE TU PUNTO DE SALIDA (TU CASA O UN SITIO CONOCIDO CERCANO)</label>
-                    <input type="text" class="form_input required" name="rsvpname" id="start_point_location" onFocus="geolocate()"/>
+                    <input type="text" class="form_input required" name="rsvpname" id="start_point_location"/>
                     </div>
                     <div class="form_row_full">
-                    <label>OTHER COMMENTS</label>
-                    <textarea class="form_textarea_full" name="rsvpcomments" id="rsvpcomments"></textarea>
+                    Tiempo estimado de viaje seg&uacute;n el tr&aacute;fico estimado el d&iacute;a de la boda: 46 minutos.
+                    <br/><br/>
+                    Te recomendamos que salgas a las 12:00 para llegar a tiempo.
+                    <br/><br/><br/><br/>
+                    A continuaci&oacute;n te presentamos la ruta &oacute;ptima desde tu domicilio hasta la iglesia, y luego hasta el lugar del evento:
+                    <br/><br/><br/><br/>
+                    <iframe id="routeToEventIframe" width="600" height="450" frameborder="0" style="border:0" src="" allowfullscreen></iframe>
+                    
                     </div>
                     <div class="form_row">
                     <input type="submit" name="submit" class="form_submit_contact" id="submit" value="SEND RSVP" />
