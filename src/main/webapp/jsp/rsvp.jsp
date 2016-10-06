@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1" />
@@ -6,8 +9,8 @@
 <meta name="description" content="Get in the spotlight" />
 <meta name="keywords" content="premium css templates, premium wordpress themes, famous themes, themeforest" />
 <title>Wedding Bells | Responsive Wedding Template</title>
-<link rel="stylesheet" type="text/css" media="all" href="style.css" />
-<link rel="stylesheet" type="text/css" media="all" href="colors/green.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="colors/blue.css" />
 <link href='http://fonts.googleapis.com/css?family=Clicker+Script' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
 </head>
@@ -17,31 +20,14 @@
     <a class="show_menu" href="#"><img src="images/mobile_menu_open.png" alt="" title="" /></a>
     <a class="hide_menu" href="#"><img src="images/mobile_menu_close.png" alt="" title="" /></a>
     
-    <nav class="menu">                                                                   
-        <ul id="main_menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="page.html">THE WEDDING</a>
-            <ul>
-                <li><a href="page.html">LOVELY DROP DOWN</a></li>
-                <li><a href="page.html">LOVELY DROP DOWN</a></li>
-                <li><a href="page.html">LOVELY DROP DOWN</a></li>
-            </ul>
-            </li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li><a href="photos.html">PHOTOS</a></li>
-            <li><a class="selected" href="rsvp.html">RSVP</a></li>
-            <li><a href="contact.html">GET IN TOUCH</a></li> 
-        </ul>
-    </nav>
+    <jsp:include page="menu.jsp"></jsp:include>
 
 
     <div class="page_header_photo contact_header">
       <div class="page_header_trans">
                <div class="page_header_title">
-               <h1>RSVP</h1>
-<p>Love is friendship that has caught fire. It is quiet understanding, sharing and forgiving. <br />
-It is loyalty through good and bad times. It settles for less than perfection<br /> and makes allowances for human weaknesses.
-<br /> <em>"RÃ©pondez s'il vous plaÃ®t."</em></p>
+               <h1>Confirma tu asistencia</h1>
+<p>Buscando que tengas la mejor experiencia en nuestro matrimonio, tenemos algunas preguntas para hacerte. Por favor se honesto con tus respuestas, esta pareja no promueve las mentiras.</p>
                </div>
        </div>
    </div>
@@ -55,74 +41,98 @@ It is loyalty through good and bad times. It settles for less than perfection<br
               
               
               <div class="form_section">  
-                  <h3 class="form_subtitle">SELECT THE EVENT(S) YOU WILL BE ATTENDING:</h3>
+                  <h3 class="form_subtitle">¿CU&Aacute;LES DE ESTAS OPCIONES TE APLICAN?</h3>
     
                  <div class="checkbox_container left13_first">
                  <input type="checkbox" id="c1" name="c1" value="Wedding Ceremony" checked>
-                 <label for="c1">Wedding Ceremony - <span>(at 10.08.2015)</span></label>
+                 <label for="c1">Vegetariano</label>
                  </div>
                  <div class="checkbox_container left13">
                  <input type="checkbox" id="c2" name="c2" value="Church Ceremony">
-                 <label for="c2">Church Ceremony - <span>(at 11.08.2015)</span></label>
+                 <label for="c2">Vegano</label>
                  </div>
                  <div class="checkbox_container left13_last">
                  <input type="checkbox" id="c3" name="c3" value="Ring Ceremony">
-                 <label for="c3">Ring Ceremony - <span>(at 12.08.2015)</span></label>
+                 <label for="c3">Diab&eacute;tico</label>
                  </div>
                  <div class="checkbox_container left13_first">
                  <input type="checkbox" id="c4" name="c4" value="Exchanging of Vows">
-                 <label for="c4">Exchanging of Vows - <span>(at 13.08.2015)</span></label>
+                 <label for="c4">Chica fit / Chico fit</label>
                  </div>
                  <div class="checkbox_container left13">
                  <input type="checkbox" id="c5" name="c5" value="Bridal Shower">
-                 <label for="c5">Bridal Shower - <span>(at 14.08.2015)</span></label>
-                 </div>
-                 <div class="checkbox_container left13_last">
-                 <input type="checkbox" id="c6" name="c6" value="After Brunch">
-                 <label for="c6">After Brunch - <span>(at 15.08.2015)</span></label>
+                 <label for="c5">Bebedor empedernido</label>
                  </div>
              </div>
 
-           <h3 class="form_subtitle">PLEASE SELECT A MEAL CHOICE</h3>
+           <h3 class="form_subtitle">SELECCIONA TU OPCI&Oacute;N PREFERIDA DE ALIMENTACI&Oacute;N</h3>
                <div class="form_section">
                     <div class="form_row left13_first">
-                    <label>MAIN</label>
+                    <label>Primera opci&oacute;n</label>
                     <div class="select_container">
                     <select class="form_select" name="mainmeal">
-                    <option value="Chicken">Chicken</option>
-                    <option value="Beef">Beef</option>
-                    <option value="Fish">Fish</option>
-                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Chicken">Pollo</option>
+                    <option value="Beef">Cerdo</option>
+                    <option value="Beef">Vegetariano</option>
                     </select>
                     </div>
                     </div>
                     <div class="form_row left13">
-                    <label>SECOND</label>
+                    <label>Segunda opci&oacute;n</label>
                     <div class="select_container">
                     <select class="form_select" name="secondmeal">
-                    <option value="Chicken">Chicken</option>
-                    <option value="Beef">Beef</option>
-                    <option value="Fish">Fish</option>
-                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Chicken">Pollo</option>
+                    <option value="Beef">Cerdo</option>
+                    <option value="Fish">Vegetariano</option>
                     </select>
                     </div>
                     </div>
                     <div class="form_row left13_last">
-                    <label>DESERT</label>
+                    <label>Postre</label>
                     <div class="select_container">
                     <select class="form_select" name="desert">
-                    <option value="Chocolate Cake">Chocolate Cake</option>
-                    <option value="Cup Cookies">Cup Cookies</option>
-                    <option value="Pumpkin Cheesecake">Pumpkin Cheesecake</option>
-                    <option value="Raspberry Cheesecake">Raspberry Cheesecake</option>
+                    <option value="Chocolate Cake">Dulce</option>
+                    <option value="Cup Cookies">Salado</option>
                     </select>
                     </div>
                     </div>
                     <div class="form_row_full">
-                    <label>MENU NOTES</label>
+                    <label>¿Alguna nota adicional de tu alimentaci&oacute;n que debamos saber?</label>
                     <textarea class="form_textarea_full" name="menunotes"></textarea>
                     </div>
                 </div>
+
+                
+           <h3 class="form_subtitle">DETALLES DE TRANSPORTE</h3>
+                <div class="form_section">
+                    <div class="form_row_full">
+                    <label>¿LLEVAR&Aacute;S VEH&Iacute;CULO?</label>
+                    <div class="select_container">
+                    <select class="form_select" name="guests">
+                    <option value="1">Si - Carro</option>
+                    <option value="2">Si - Moto</option>
+                    <option value="3">Si - Bicicleta</option>
+                    <option value="4">Si - Helic&oacute;ptero</option>
+                    <option value="5+">No</option>
+                    </select>
+                    </div>
+                    </div>
+                    <div class="form_row full">
+                    <label>INSERTA LA DIRECCI&Oacute;N DE TU PUNTO DE SALIDA (TU CASA)</label>
+                    <input type="text" class="form_input required" name="rsvpname" id="rsvpname" />
+                    </div>
+                    <div class="form_row_full">
+                    <label>OTHER COMMENTS</label>
+                    <textarea class="form_textarea_full" name="rsvpcomments" id="rsvpcomments"></textarea>
+                    </div>
+                    <div class="form_row">
+                    <input type="submit" name="submit" class="form_submit_contact" id="submit" value="SEND RSVP" />
+                    <input class="" type="hidden" name="to"  value="youremail@yourwebsite.com" />
+                    <input class="" type="hidden" name="subject" value="RSVP form message" />
+                    <label id="loader" style="display:none;"><img src="images/loader.gif" alt="Loading..." id="LoadingGraphic" /></label> 
+                    </div> 
+               </div>
+                
                 
            <h3 class="form_subtitle">GUEST DETAILS &amp; COMMENTS</h3>
                 <div class="form_section">
@@ -198,32 +208,7 @@ It is loyalty through good and bad times. It settles for less than perfection<br
       </div>
   </div>
    
-   <div class="footer">
-      <div class="full_width_centered">
-       <div class="footer_sign"><span class="swirl_left_transparent"><span class="swirl_right_transparent"><img src="images/birds_icon.png" alt="" title="" /></span></span></div>
-       <div class="footer_names">JENIFER &amp; OLIVER</div>
-       <div class="footer_socials">
-       <ul>
-       <li><a href="#"><img src="images/social/twitter.png" alt="" title="" /></a></li>
-       <li><a href="#"><img src="images/social/facebook.png" alt="" title="" /></a></li>
-       <li><a href="#"><img src="images/social/pinterest.png" alt="" title="" /></a></li>
-       <li><a href="#"><img src="images/social/vimeo.png" alt="" title="" /></a></li>
-       <li><a href="#"><img src="images/social/google.png" alt="" title="" /></a></li>
-       <li><a href="#"><img src="images/social/youtube.png" alt="" title="" /></a></li>
-       </ul>
-       </div>
-       <nav class="footer_menu">
-       <ul>
-       <li><a href="index.html">HOME</a></li>
-       <li><a href="page.html">THE WEDDING</a></li>
-       <li><a href="rsvp.html" class="selected">RSVP</a></li>
-       <li><a href="contact.html">GET IN TOUCH</a></li>
-       <li><a onClick="jQuery('html, body').animate( { scrollTop: 0 }, 'slow' );"  href="javascript:void(0);" class="gotop" title="Go on top">TOP</a> </li>
-       </ul>
-       </nav>
-       <div class="footer_copyright">Made with love by <a href="http://famousthemes.com">FAMOUSTHEMES.COM</a> &amp; <a href="http://ourweddingtheme.com">OURWEDDINGTHEME.COM</a></div>
-      </div>
-   </div>
+<jsp:include page="footer.jsp"></jsp:include>
 
 </div>
 <!-- jQuery -->

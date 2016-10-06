@@ -8,7 +8,7 @@
 <meta name="author" content="FamousThemes" />
 <meta name="description" content="Get in the spotlight" />
 <meta name="keywords" content="premium css templates, premium wordpress themes, famous themes, themeforest" />
-<title>Wedding Bells | Responsive Wedding Template</title>
+<title>Aleja&Sebas - 07.01.2017</title>
 <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
 <link rel="stylesheet" type="text/css" media="all" href="colors/blue.css" />
 <link rel="stylesheet" href="css/carousel.css">
@@ -21,30 +21,16 @@
     <a class="show_menu" href="#"><img src="images/mobile_menu_open.png" alt="" title="" /></a>
     <a class="hide_menu" href="#"><img src="images/mobile_menu_close.png" alt="" title="" /></a>
     
-    <nav class="menu">                                                                   
-        <ul id="main_menu">
-            <li><a class="selected" href="index.html">HOME</a></li>
-            <li><a href="page.html">THE WEDDING</a>
-            <ul>
-                <li><a href="page.html">LOVELY DROP DOWN</a></li>
-                <li><a href="page.html">LOVELY DROP DOWN</a></li>
-                <li><a href="page.html">LOVELY DROP DOWN</a></li>
-            </ul>
-            </li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li><a href="photos.html">PHOTOS</a></li>
-            <li><a href="rsvp.html">RSVP</a></li>
-            <li><a href="contact.html">GET IN TOUCH</a></li> 
-        </ul>
-    </nav>
+    <jsp:include page="menu.jsp"></jsp:include>
+
     
     <div class="title_container">
      
-         <div class="title_front">WE ARE GETTING MARRIED</div>
+         <div class="title_front">NOS VAMOS A CASAR</div>
          <div class="love_birds"><img src="images/birds_icon.png" alt="" title=""/></div>
-         <div class="title">Jenifer <span>&amp;</span> Oliver</div>
-         <div class="title_date"><span class="swirl_left"><span class="swirl_right">12.07.2015</span></span></div>
-         <div class="title_under">SAVE THE DATE</div>
+         <div class="title">Aleja <span>&amp;</span> Sebas</div>
+         <div class="title_date"><span class="swirl_left"><span class="swirl_right">01.07.2017</span></span></div>
+         <div class="title_under">AGENDA LA FECHA</div>
          
     </div>
 
@@ -57,111 +43,12 @@
             </div>
    </div>
    <div class="countdown_container">
-       <h2 class="centered_title">Countdown to Wedding Ceremony</h2>
+       <h2 class="centered_title">Cuenta regresiva al matrimonio:</h2>
        <div id="defaultCountdown"></div>
-       <div class="rsvp_button"><span class="swirl_left_small"><span class="swirl_right_small"><a href="#">RSVP</a></span></span></div>
+       <div class="rsvp_button"><span class="swirl_left_small"><span class="swirl_right_small"><a href="#">Confirma tu asistencia dando click aqu&iacute;</a></span></span></div>
    </div>
 
-    <div class="about_content">
-    <div class="about_topsign">&amp;</div>
-     <div class="full_width_centered">
-     
 
-               <div class="left12_first">
-                   <span class="names_titles">THE BRIDE</span>
-                   <h2>JENIFER HARRISON</h2>
-                        <div class="about_pic_container">
-                        <span class="about_picframe"></span>
-                        <div class="about_social">
-                        <a href="#"><img src="images/social/twitter.png" alt="" title="" /></a>
-                        <a href="#"><img src="images/social/facebook.png" alt="" title="" /></a>
-                        <a href="#"><img src="images/social/pinterest.png" alt="" title="" /></a>
-                        </div>
-                        <div class="about_pic"><img src="images/image12.jpg" alt="" title="" /></div>
-                        </div>
-                    <a href="#" class="thumb_read_more">MORE ABOUT JENIFER</a>
-                   <p>Love is friendship that has caught fire. It is quiet understanding, mutual confidence, <a href="#">sharing and forgiving</a>. It is loyalty through good and bad times. It settles for less than perfection and <strong>makes allowances</strong> for human weaknesses "<a href="#">LOVE QUOTE</a>":</p>
-                   <span class="love_quote">Sometimes the heart sees what is invisible to the eye.</span>
-                   
-               </div>
-               <div class="left12_last">
-                   <span class="names_titles">THE GROOM</span>
-                   <h2>OLIVER DUVALL</h2>
-                        <div class="about_pic_container">
-                        <span class="about_picframe"></span>
-                        <div class="about_social">
-                        <a href="#"><img src="images/social/twitter.png" alt="" title="" /></a>
-                        <a href="#"><img src="images/social/facebook.png" alt="" title="" /></a>
-                        <a href="#"><img src="images/social/pinterest.png" alt="" title="" /></a>
-                        </div>
-                        <div class="about_pic"><img src="images/image12_2.jpg" alt="" title="" /></div>
-                        </div>
-                    <a href="#" class="thumb_read_more">MORE ABOUT OLIVER</a>
-                   <p>I believe that imagination is stronger than knowledge. That myth is more potent than history. That dreams are more powerful than facts. That hope always triumphs over experience. That laughter is the only cure for grief. And I believe that love is stronger than death "<a href="#">LOVE QUOTE</a>":</p>
-                   <span class="love_quote">Where there is love there is life.</span>
-               </div>
-    
-          <div class="clear"></div>
-        </div>  <!--end of full width-->
-      </div> <!--end of about content-->   
-  
-  <div class="carousel_container"> 
-   <div class="carousel_container_image">
-     <div class="full_width_carousel">
-        <h2>OUR BRIDEMAIDS AND GROOMSMEN'S</h2>
-        <span class="carousel_titles">BEST MAN &amp; MAID OF HONOR</span>
-        <div id="weddingcarousel" class="owl-carousel">
-            <div class="left14"><div class="bestman"><span>BEST MAN</span><img src="images/bestman.png" alt="" title="" /></div><img src="images/image_14.jpg" alt="" title="" /><h3>MIKE STEPHANSON</h3></div>
-            <div class="left14"><div class="bestman"><span>MAID OF HONOR</span><img src="images/maidofhonor.png" alt="" title="" /></div><img src="images/image_14_3.jpg" alt="" title="" /><h3>LINDSEY REMY</h3></div>
-            <div class="left14"><img src="images/image_14_2.jpg" alt="" title="" /><h3>ELIZABETH LYN</h3></div>
-            <div class="left14_last"><img src="images/image_14_6.jpg" alt="" title="" /><h3>STEVE KAY</h3></div>
-            <div class="left14"><img src="images/image_14_5.jpg" alt="" title="" /><h3>JOHN DOE</h3></div>
-            <div class="left14"><img src="images/image_14_3.jpg" alt="" title="" /><h3>MAYA ELIOT</h3></div>
-            <div class="left14"><img src="images/image_14_7.jpg" alt="" title="" /><h3>JOHANNA PASCAL</h3></div>
-            <div class="left14_last"><img src="images/image_14_8.jpg" alt="" title="" /><h3>JOHN DOE</h3></div>
-        </div>   
-     </div>
-    </div> 
-  </div>
-  
-  <div class="full_width_centered">
-       <div class="latest_posts">
-            <h2>FROM THE BLOG</h2>
-            <div class="left13">
-              <div class="latest_post">
-                <div class="post_info">
-                   <span class="post_date">20 JUNE 2015</span>
-                   <h3><a href="blog-single.html">THE PROPOSAL WAS AMAZING</a></h3>
-                   <a href="blog-single.html" class="post_read_more">READ MORE</a>
-                </div> 
-                <img src="images/post_thumb1.jpg" alt="" title="" />
-              </div>
-            </div>
-            <div class="left13">
-              <div class="latest_post">
-                <div class="post_info">
-                   <span class="post_date">18 MAY 2015</span>
-                   <h3><a href="blog-single.html">OUR ROMANTIC HONEYMOON IN VENICE</a></h3>
-                   <a href="blog-single.html" class="post_read_more">READ MORE</a>
-                </div> 
-                <img src="images/post_thumb2.jpg" alt="" title="" />
-              </div>
-            </div>
-            <div class="left13_last">
-              <div class="latest_post">
-                <div class="post_info">
-                   <span class="post_date">31 MARCH 2015</span>
-                   <h3><a href="blog-single.html">LOVE IS COMPOSED OF A SINGLE SOUL</a></h3>
-                   <a href="blog-single.html" class="post_read_more">READ MORE</a>
-                </div> 
-                <img src="images/post_thumb3.jpg" alt="" title="" />
-              </div>
-            </div>
-            <a href="blog.html" class="view_all">VIEW ALL POSTS</a>
-            <div class="clear"></div>
-      </div>
-  </div>
-  
   
   <div class="home_bottom">
       <div class="full_width_centered">
@@ -191,32 +78,7 @@
       </div>
   </div>
    
-   <div class="footer">
-      <div class="full_width_centered">
-       <div class="footer_sign"><span class="swirl_left_transparent"><span class="swirl_right_transparent"><img src="images/birds_icon.png" alt="" title="" /></span></span></div>
-       <div class="footer_names">JENIFER &amp; OLIVER</div>
-       <div class="footer_socials">
-       <ul>
-       <li><a href="#"><img src="images/social/twitter.png" alt="" title="" /></a></li>
-       <li><a href="#"><img src="images/social/facebook.png" alt="" title="" /></a></li>
-       <li><a href="#"><img src="images/social/pinterest.png" alt="" title="" /></a></li>
-       <li><a href="#"><img src="images/social/vimeo.png" alt="" title="" /></a></li>
-       <li><a href="#"><img src="images/social/google.png" alt="" title="" /></a></li>
-       <li><a href="#"><img src="images/social/youtube.png" alt="" title="" /></a></li>
-       </ul>
-       </div>
-       <nav class="footer_menu">
-       <ul>
-       <li><a href="index.html" class="selected">HOME</a></li>
-       <li><a href="page.html">THE WEDDING</a></li>
-       <li><a href="rsvp.html">RSVP</a></li>
-       <li><a href="contact.html">GET IN TOUCH</a></li>
-       <li><a onClick="jQuery('html, body').animate( { scrollTop: 0 }, 'slow' );"  href="javascript:void(0);" class="gotop" title="Go on top">TOP</a> </li>
-       </ul>
-       </div>
-       <div class="footer_copyright">Made with love by <a href="http://famousthemes.com">FAMOUSTHEMES.COM</a> &amp; <a href="http://ourweddingtheme.com">OURWEDDINGTHEME.COM</a></div>
-      </nav>
-   </div>
+<jsp:include page="footer.jsp"></jsp:include>
 
 </div>
 <!-- jQuery -->
@@ -261,7 +123,7 @@ var $ = jQuery.noConflict();
    $bestman.show().arctext({radius: 80});
    $footernames.show().arctext({radius: 120, dir: -1});
 
-   $('#defaultCountdown').countdown({until: new Date(2016, 8 - 1, 20, 15), format: 'y-o-d-h'});	 	
+   $('#defaultCountdown').countdown({until: new Date(2017, 1 - 1, 7, 15), format: 'y-o-d-h'});	 	
 
   });
 </script>
