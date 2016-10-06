@@ -118,8 +118,8 @@
                     </div>
                     </div>
                     <div class="form_row full">
-                    <label>INSERTA LA DIRECCI&Oacute;N DE TU PUNTO DE SALIDA (TU CASA)</label>
-                    <input type="text" class="form_input required" name="rsvpname" id="rsvpname" />
+                    <label>INSERTA LA DIRECCI&Oacute;N DE TU PUNTO DE SALIDA (TU CASA O UN SITIO CONOCIDO CERCANO)</label>
+                    <input type="text" class="form_input required" name="rsvpname" id="start_point_location" onFocus="geolocate()"/>
                     </div>
                     <div class="form_row_full">
                     <label>OTHER COMMENTS</label>
@@ -281,5 +281,8 @@ var i = setInterval(function() {
 return false;
 }
 </script>  
+<script type="text/javascript" src="js/google-helper.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbG36j_XKchUFTvRcAgZoNzlOzeg2lRIk&libraries=places&callback=initAutocomplete"></script>
+
 </body>
 </html>
