@@ -30,7 +30,7 @@
          <div class="love_birds"><img src="images/birds_icon.png" alt="" title=""/></div>
          <div class="title">Aleja <span>&amp;</span> Sebas</div>
          <div class="title_date"><span class="swirl_left"><span class="swirl_right">01.07.2017</span></span></div>
-         <div class="title_under">AGENDA LA FECHA</div>
+         <a href="ical/Matrimonio_Aleja_y_Sebas.ics" download><div class="title_under">AGENDA LA FECHA</div></a>
          
     </div>
 

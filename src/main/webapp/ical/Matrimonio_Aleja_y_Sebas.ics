@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//www.marudot.com//iCal Event Maker
+X-WR-CALNAME:Matrimonio Aleja y Sebas
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:America/Bogota
+TZURL:http://tzurl.org/zoneinfo-outlook/America/Bogota
+X-LIC-LOCATION:America/Bogota
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0500
+TZNAME:COT
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20161006T061552Z
+UID:20161006T061552Z-809729917@marudot.com
+DTSTART;TZID="America/Bogota":20170107T150000
+DTEND;TZID="America/Bogota":20170107T200000
+SUMMARY:Matrimonio Aleja y Sebas
+URL:https%3A%2F%2Falejasebas.herokuapp.com
+DESCRIPTION:Toda la información sobre la boda la encuentras aquí:\nhttps://alejasebas.herokuapp.com
+LOCATION:https://alejasebas.herokuapp.com
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Matrimonio Aleja y Sebas
+TRIGGER:-P1W
+END:VALARM
+END:VEVENT
+END:VCALENDAR
