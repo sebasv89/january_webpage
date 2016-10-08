@@ -18,4 +18,9 @@ public class JspPagesController {
 		return "rsvp";
 	}
 
+	@RequestMapping("/information")
+	public String info(Map<String, Object> model) {
+		return "information";
+	}
+
 }

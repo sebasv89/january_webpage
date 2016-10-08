@@ -10,8 +10,8 @@
        </div>
        <nav class="footer_menu">
        <ul>
-			<li><a class="selected" href="/">HOME</a></li>
-            <li><a href="info.jsp">INFORMACI&Oacute;N &Uacute;TIL</a>
+			<li><a href="/">HOME</a></li>
+            <li><a href="/information">INFORMACI&Oacute;N &Uacute;TIL</a>
             </li>
             <li><a href="/rsvp">RSVP</a></li>
        <li><a onClick="jQuery('html, body').animate( { scrollTop: 0 }, 'slow' );"  href="javascript:void(0);" class="gotop" title="Go on top">VOLVER ARRIBA</a> </li>

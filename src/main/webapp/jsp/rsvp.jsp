@@ -20,7 +20,14 @@
     <a class="show_menu" href="#"><img src="images/mobile_menu_open.png" alt="" title="" /></a>
     <a class="hide_menu" href="#"><img src="images/mobile_menu_close.png" alt="" title="" /></a>
     
-    <jsp:include page="menu.jsp"></jsp:include>
+    <nav class="menu">                                                                   
+        <ul id="main_menu">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/information">INFORMACI&Oacute;N &Uacute;TIL</a>
+            </li>
+            <li><a class="selected" href="/rsvp">RSVP</a></li>
+        </ul>
+    </nav>
 
 
     <div class="page_header_photo contact_header">
@@ -39,69 +46,83 @@
                 <h3 class="form_toptitle" id="Note"></h3>
                 <form id="RSVPForm" method="post" action="">
               
-              
-              <div class="form_section">  
-                  <h3 class="form_subtitle">¿CU&Aacute;LES DE ESTAS OPCIONES TE APLICAN?</h3>
+             
+                <div class="form_section">
+                    <div class="form_row_full">
+                    <label>N&uacute;mero de invitados que confirmar&aacute;s:</label>
+                    <div class="select_container">
+                    <select class="form_select" name="guests">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    </select>
+                    </div>
+                    </div>
+               </div>
+
+
+              <div class="form_section">
+              	  
+                  <h3 class="form_subtitle">¿CU&Aacute;LES DE ESTAS OPCIONES APLICAN PARA LAS PERSONAS A CONFIRMAR?</h3>
     
+			    <div class="form_row full">
+                    <label>Nombre:</label>
+                    <input type="text" class="form_input required" name="rsvpname" id="daddadsa"/>
+                 </div>
                  <div class="checkbox_container left13_first">
                  <input type="checkbox" id="c1" name="c1" value="Wedding Ceremony" checked>
                  <label for="c1">Vegetariano</label>
                  </div>
                  <div class="checkbox_container left13">
                  <input type="checkbox" id="c2" name="c2" value="Church Ceremony">
-                 <label for="c2">Vegano</label>
+                 <label for="c2">Diab&eacute;tico</label>
                  </div>
                  <div class="checkbox_container left13_last">
                  <input type="checkbox" id="c3" name="c3" value="Ring Ceremony">
-                 <label for="c3">Diab&eacute;tico</label>
+                 <label for="c3">Borracho por convicci&oacute;n</label>
+                 </div>
+
+
+			    <div class="form_row full">
+                    <label>Nombre:</label>
+                    <input type="text" class="form_input required" name="rsvpname" id="daddadsa"/>
                  </div>
                  <div class="checkbox_container left13_first">
-                 <input type="checkbox" id="c4" name="c4" value="Exchanging of Vows">
-                 <label for="c4">Chica fit / Chico fit</label>
+                 <input type="checkbox" id="c1" name="c1" value="Wedding Ceremony" checked>
+                 <label for="c1">Vegetariano</label>
                  </div>
                  <div class="checkbox_container left13">
-                 <input type="checkbox" id="c5" name="c5" value="Bridal Shower">
-                 <label for="c5">Bebedor empedernido</label>
+                 <input type="checkbox" id="c2" name="c2" value="Church Ceremony">
+                 <label for="c2">Diab&eacute;tico</label>
                  </div>
+                 <div class="checkbox_container left13_last">
+                 <input type="checkbox" id="c3" name="c3" value="Ring Ceremony">
+                 <label for="c3">Borracho por convicci&oacute;n</label>
+                 </div>
+                 
+                 
+			    <div class="form_row full">
+                    <label>Nombre:</label>
+                    <input type="text" class="form_input required" name="rsvpname" id="daddadsa"/>
+                 </div>
+                 <div class="checkbox_container left13_first">
+                 <input type="checkbox" id="c1" name="c1" value="Wedding Ceremony" checked>
+                 <label for="c1">Vegetariano</label>
+                 </div>
+                 <div class="checkbox_container left13">
+                 <input type="checkbox" id="c2" name="c2" value="Church Ceremony">
+                 <label for="c2">Diab&eacute;tico</label>
+                 </div>
+                 <div class="checkbox_container left13_last">
+                 <input type="checkbox" id="c3" name="c3" value="Ring Ceremony">
+                 <label for="c3">Borracho por convicci&oacute;n</label>
+                 </div>
+                 
+                 
+                 
              </div>
-
-           <h3 class="form_subtitle">SELECCIONA TU OPCI&Oacute;N PREFERIDA DE ALIMENTACI&Oacute;N</h3>
-               <div class="form_section">
-                    <div class="form_row left13_first">
-                    <label>Primera opci&oacute;n</label>
-                    <div class="select_container">
-                    <select class="form_select" name="mainmeal">
-                    <option value="Chicken">Pollo</option>
-                    <option value="Beef">Cerdo</option>
-                    <option value="Beef">Vegetariano</option>
-                    </select>
-                    </div>
-                    </div>
-                    <div class="form_row left13">
-                    <label>Segunda opci&oacute;n</label>
-                    <div class="select_container">
-                    <select class="form_select" name="secondmeal">
-                    <option value="Chicken">Pollo</option>
-                    <option value="Beef">Cerdo</option>
-                    <option value="Fish">Vegetariano</option>
-                    </select>
-                    </div>
-                    </div>
-                    <div class="form_row left13_last">
-                    <label>Postre</label>
-                    <div class="select_container">
-                    <select class="form_select" name="desert">
-                    <option value="Chocolate Cake">Dulce</option>
-                    <option value="Cup Cookies">Salado</option>
-                    </select>
-                    </div>
-                    </div>
-                    <div class="form_row_full">
-                    <label>¿Alguna nota adicional de tu alimentaci&oacute;n que debamos saber?</label>
-                    <textarea class="form_textarea_full" name="menunotes"></textarea>
-                    </div>
-                </div>
-
                 
            <h3 class="form_subtitle">DETALLES DE TRANSPORTE</h3>
                 <div class="form_section">
@@ -139,44 +160,11 @@
                     </div> 
                </div>
                 
-                
-           <h3 class="form_subtitle">GUEST DETAILS &amp; COMMENTS</h3>
-                <div class="form_section">
-                    <div class="form_row_full">
-                    <label>NR OF GUESTS</label>
-                    <div class="select_container">
-                    <select class="form_select" name="guests">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5+">5+</option>
-                    </select>
-                    </div>
-                    </div>
-                    <div class="form_row left13_first">
-                    <label>NAME</label>
-                    <input type="text" class="form_input required" name="rsvpname" id="rsvpname" />
-                    </div>
-                    <div class="form_row left13">
-                    <label>EMAIL</label>
-                    <input type="text" class="form_input required email" name="rsvpemail" id="rsvpemail" />
-                    </div>
-                    <div class="form_row left13_last">
-                    <label>PHONE</label>
-                    <input type="text" class="form_input required" name="rsvpphone" id="rsvpphone" />
-                    </div>
-                    <div class="form_row_full">
-                    <label>OTHER COMMENTS</label>
-                    <textarea class="form_textarea_full" name="rsvpcomments" id="rsvpcomments"></textarea>
-                    </div>
-                    <div class="form_row">
+   <div class="form_row">
                     <input type="submit" name="submit" class="form_submit_contact" id="submit" value="SEND RSVP" />
                     <input class="" type="hidden" name="to"  value="youremail@yourwebsite.com" />
                     <input class="" type="hidden" name="subject" value="RSVP form message" />
-                    <label id="loader" style="display:none;"><img src="images/loader.gif" alt="Loading..." id="LoadingGraphic" /></label> 
-                    </div> 
-               </div>
+                    </div>
                 
                 </form>
             </div>              
@@ -186,33 +174,6 @@
       </div> <!--end of about content-->   
   
   
-  <div class="home_bottom">
-      <div class="full_width_centered">
-            <div class="left13"> 
-            <div class="bottom_icon"><img src="images/icon_music.png" alt="" title="" /></div>
-            <h2>BACHELOR PARTY</h2>
-            <span class="subtitle">BRING YOUR DANCING SHOES</span>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <strong>cillum dolore</strong> eu fugiat nulla pariat ur si nt oc caecat non proident, sunt in culpa <a href="#">qui officia</a> deserunt mollit anim id est laborum sed quia non numquam eius modi.</p>
-            <a href="page.html" class="post_read_more">READ MORE</a>
-            </div>
-            <div class="left13">
-            <div class="bottom_icon"><img src="images/icon_location.png" alt="" title="" /></div>
-            <h2>WEDDING LOCATION</h2>
-            <span class="subtitle">VENICE, ITALY - HOTEL ADAM</span>
-            <p>Nemo enim ipsam voluptatem <strong>quia voluptas</strong> sit aspernatur aut odit aut fugit, sed quia consequuntur <a href="#">magni</a> dolores eos qui ratione voluptatem sequi nesciunt. Neque quisquam est, qui dolorem ipsum</p>
-            <a href="page.html" class="post_read_more">READ MORE</a>
-            </div>
-            <div class="left13_last">
-            <div class="bottom_icon"><img src="images/icon_gifts.png" alt="" title="" /></div>
-            <h2>GIFT REGISTRY</h2>
-            <span class="subtitle">GIVEN FREELY AND OUT OF PURE LOVE</span>
-            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit <a href="#">esse quam nihil</a> aspernatur aut odit aut fugit molestiae consequatur, vel illum <strong>qui dolorem</strong> eum fugiat quo voluptas nulla pariatur aspernatur.</p>
-            <a href="page.html" class="post_read_more">READ MORE</a>
-            </div>
-            
-            <div class="clear"></div>
-      </div>
-  </div>
    
 <jsp:include page="footer.jsp"></jsp:include>
 

@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1" />
@@ -6,8 +10,8 @@
 <meta name="description" content="Get in the spotlight" />
 <meta name="keywords" content="premium css templates, premium wordpress themes, famous themes, themeforest" />
 <title>Wedding Bells | Responsive Wedding Template</title>
-<link rel="stylesheet" type="text/css" media="all" href="style.css" />
-<link rel="stylesheet" type="text/css" media="all" href="colors/green.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="colors/blue.css" />
 <link href='http://fonts.googleapis.com/css?family=Clicker+Script' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
 
@@ -18,20 +22,12 @@
     <a class="show_menu" href="#"><img src="images/mobile_menu_open.png" alt="" title="" /></a>
     <a class="hide_menu" href="#"><img src="images/mobile_menu_close.png" alt="" title="" /></a>
     
-    <nav class="menu">                                                                   
+   <nav class="menu">                                                                   
         <ul id="main_menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a class="selected" href="page.html">THE WEDDING</a>
-            <ul>
-                <li><a href="page.html">LOVELY DROP DOWN</a></li>
-                <li><a href="page.html">LOVELY DROP DOWN</a></li>
-                <li><a href="page.html">LOVELY DROP DOWN</a></li>
-            </ul>
+            <li><a href="/">HOME</a></li>
+            <li><a class="selected" href="/information">INFORMACI&Oacute;N &Uacute;TIL</a>
             </li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li><a href="photos.html">PHOTOS</a></li>
-            <li><a href="rsvp.html">RSVP</a></li>
-            <li><a href="contact.html">GET IN TOUCH</a></li> 
+            <li><a href="/rsvp">RSVP</a></li>
         </ul>
     </nav>
 
@@ -153,32 +149,7 @@ It is loyalty through good and bad times. It settles for less than perfection<br
       </div>
   </div>
    
-   <div class="footer">
-      <div class="full_width_centered">
-       <div class="footer_sign"><span class="swirl_left_transparent"><span class="swirl_right_transparent"><img src="images/birds_icon.png" alt="" title="" /></span></span></div>
-       <div class="footer_names">JENIFER &amp; OLIVER</div>
-       <div class="footer_socials">
-       <ul>
-       <li><a href="#"><img src="images/social/twitter.png" alt="" title="" /></a></li>
-       <li><a href="#"><img src="images/social/facebook.png" alt="" title="" /></a></li>
-       <li><a href="#"><img src="images/social/pinterest.png" alt="" title="" /></a></li>
-       <li><a href="#"><img src="images/social/vimeo.png" alt="" title="" /></a></li>
-       <li><a href="#"><img src="images/social/google.png" alt="" title="" /></a></li>
-       <li><a href="#"><img src="images/social/youtube.png" alt="" title="" /></a></li>
-       </ul>
-       </div>
-       <nav class="footer_menu">
-       <ul>
-       <li><a href="index.html">HOME</a></li>
-       <li><a href="page.html" class="selected">THE WEDDING</a></li>
-       <li><a href="rsvp.html">RSVP</a></li>
-       <li><a href="contact.html">GET IN TOUCH</a></li>
-       <li><a onClick="jQuery('html, body').animate( { scrollTop: 0 }, 'slow' );"  href="javascript:void(0);" class="gotop" title="Go on top">TOP</a> </li>
-       </ul>
-       </nav>
-       <div class="footer_copyright">Made with love by <a href="http://famousthemes.com">FAMOUSTHEMES.COM</a> &amp; <a href="http://ourweddingtheme.com">OURWEDDINGTHEME.COM</a></div>
-      </div>
-   </div>
+   <jsp:include page="footer.jsp"></jsp:include>
 
 </div>
 <!-- jQuery -->

@@ -21,7 +21,14 @@
     <a class="show_menu" href="#"><img src="images/mobile_menu_open.png" alt="" title="" /></a>
     <a class="hide_menu" href="#"><img src="images/mobile_menu_close.png" alt="" title="" /></a>
     
-    <jsp:include page="menu.jsp"></jsp:include>
+    <nav class="menu">                                                                   
+        <ul id="main_menu">
+            <li><a class="selected" href="/">HOME</a></li>
+            <li><a href="/information">INFORMACI&Oacute;N &Uacute;TIL</a>
+            </li>
+            <li><a href="/rsvp">RSVP</a></li>
+        </ul>
+    </nav>
 
     
     <div class="title_container">
@@ -53,25 +60,33 @@
   <div class="home_bottom">
       <div class="full_width_centered">
             <div class="left13"> 
-            <div class="bottom_icon"><img src="images/icon_music.png" alt="" title="" /></div>
-            <h2>BACHELOR PARTY</h2>
-            <span class="subtitle">BRING YOUR DANCING SHOES</span>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse <strong>cillum dolore</strong> eu fugiat nulla pariat ur si nt oc caecat non proident, sunt in culpa <a href="#">qui officia</a> deserunt mollit anim id est laborum sed quia non numquam eius modi.</p>
-            <a href="page.html" class="post_read_more">READ MORE</a>
+            <div class="bottom_icon"><img src="images/icon_vacation.png" alt="" title="" /></div>
+            <h2>VESTUARIO</h2>
+            <span class="subtitle">Nada de formalidades. ¡Ante todo comodidad!</span>
+            <p>
+            Estaremos en Santa Elena, y hace algo de frio. <br/>
+            <strong>Hombres:</strong> Nada de corbatas ni corbatines. <br/> 
+            <strong>Mujeres:</strong> Lindas como siempre. <br/>
+            <br/>
+            (No nos gusta el rojo) 
+            
+            </p>
+            <a href="page.html" class="post_read_more">LEER M&Aacute;S</a>
             </div>
             <div class="left13">
             <div class="bottom_icon"><img src="images/icon_location.png" alt="" title="" /></div>
-            <h2>WEDDING LOCATION</h2>
-            <span class="subtitle">VENICE, ITALY - HOTEL ADAM</span>
-            <p>Nemo enim ipsam voluptatem <strong>quia voluptas</strong> sit aspernatur aut odit aut fugit, sed quia consequuntur <a href="#">magni</a> dolores eos qui ratione voluptatem sequi nesciunt. Neque quisquam est, qui dolorem ipsum</p>
-            <a href="page.html" class="post_read_more">READ MORE</a>
+            <h2>UBICACI&Oacute;N</h2>
+            <span class="subtitle">Santa Elena, Antioquia</span>
+            <p>La ceremonia ser&aacute; en la <strong>Capilla Ermita de la Santa Cruz - El Tambo</strong> a las 2.30PM. Luego la recepci&oacute;n ser&aacute; en Cariva Eventos, en el mismo sector.</br>
+            <br/>Coordenadas: 6.277365, -75.496279<br/>o mejor:<br/><br/>
+            <a href="https://www.google.com.co/maps/dir/Capilla+ermita+de+santa+cruz,+Medell%C3%ADn,+Antioquia/Cariva+Eventos,+Guarne,+Antioquia/@6.2508654,-75.5024863,14z/data=!4m13!4m12!1m5!1m1!1s0x8e442671d827e8c7:0x2212fe2c42d36b22!2m2!1d-75.4963114!2d6.2773547!1m5!1m1!1s0x8e4427a0d9bc2b27:0xb7963a9a4e1dee10!2m2!1d-75.4837296!2d6.2298501?hl=es" class="post_read_more">Ver Mapa</a>
+            </p>
             </div>
             <div class="left13_last">
             <div class="bottom_icon"><img src="images/icon_gifts.png" alt="" title="" /></div>
-            <h2>GIFT REGISTRY</h2>
-            <span class="subtitle">GIVEN FREELY AND OUT OF PURE LOVE</span>
-            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit <a href="#">esse quam nihil</a> aspernatur aut odit aut fugit molestiae consequatur, vel illum <strong>qui dolorem</strong> eum fugiat quo voluptas nulla pariatur aspernatur.</p>
-            <a href="page.html" class="post_read_more">READ MORE</a>
+            <h2>LLUVIA DE SOBRES</h2>
+            <span class="subtitle">Es opcional. Lo m&aacute;s importante es que nos acompa&ntilde;es</span>
+            <p>No tendremos lista de regalos ni nada por el estilo. Ser&aacute; lluvia de sobres</p>
             </div>
             
             <div class="clear"></div>
