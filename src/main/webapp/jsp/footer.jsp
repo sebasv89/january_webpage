@@ -17,5 +17,4 @@
        <li><a onClick="jQuery('html, body').animate( { scrollTop: 0 }, 'slow' );"  href="javascript:void(0);" class="gotop" title="Go on top">VOLVER ARRIBA</a> </li>
        </ul>
        </div>
-      </nav>
    </div>

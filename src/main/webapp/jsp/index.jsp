@@ -71,7 +71,6 @@
             (No nos gusta el rojo) 
             
             </p>
-            <a href="page.html" class="post_read_more">LEER M&Aacute;S</a>
             </div>
             <div class="left13">
             <div class="bottom_icon"><img src="images/icon_location.png" alt="" title="" /></div>
@@ -86,7 +85,7 @@
             <div class="bottom_icon"><img src="images/icon_gifts.png" alt="" title="" /></div>
             <h2>LLUVIA DE SOBRES</h2>
             <span class="subtitle">Es opcional. Lo m&aacute;s importante es que nos acompa&ntilde;es</span>
-            <p>No tendremos lista de regalos ni nada por el estilo. Ser&aacute; lluvia de sobres</p>
+            <p>No tendremos lista de regalos ni nada por el estilo. Cualquier donaci&oacute;n es bien recibida :)</p>
             </div>
             
             <div class="clear"></div>

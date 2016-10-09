@@ -46,81 +46,25 @@
                 <h3 class="form_toptitle" id="Note"></h3>
                 <form id="RSVPForm" method="post" action="">
               
-             
-                <div class="form_section">
-                    <div class="form_row_full">
-                    <label>N&uacute;mero de invitados que confirmar&aacute;s:</label>
+  				<div class="form_row_full">
+                    <label>N&uacute;mero de invitados a confirmar:</label>
                     <div class="select_container">
-                    <select class="form_select" name="guests">
+                    <select class="form_select" id="guests" onchange="setHtmlForInvitedPeople();">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
-                    <option value="5">5</option>
+                    <option value="5+">5+</option>
                     </select>
                     </div>
-                    </div>
-               </div>
 
-
+<p></p>
               <div class="form_section">
               	  
-                  <h3 class="form_subtitle">¿CU&Aacute;LES DE ESTAS OPCIONES APLICAN PARA LAS PERSONAS A CONFIRMAR?</h3>
+                  <h3 class="form_subtitle" id="titleForInfoAtendees">¿CU&Aacute;LES DE ESTAS OPCIONES APLICAN PARA LAS PERSONAS A CONFIRMAR?</h3>
     
-			    <div class="form_row full">
-                    <label>Nombre:</label>
-                    <input type="text" class="form_input required" name="rsvpname" id="daddadsa"/>
-                 </div>
-                 <div class="checkbox_container left13_first">
-                 <input type="checkbox" id="c1" name="c1" value="Wedding Ceremony" checked>
-                 <label for="c1">Vegetariano</label>
-                 </div>
-                 <div class="checkbox_container left13">
-                 <input type="checkbox" id="c2" name="c2" value="Church Ceremony">
-                 <label for="c2">Diab&eacute;tico</label>
-                 </div>
-                 <div class="checkbox_container left13_last">
-                 <input type="checkbox" id="c3" name="c3" value="Ring Ceremony">
-                 <label for="c3">Borracho por convicci&oacute;n</label>
-                 </div>
+             	<div id="holderForInvitedPeopleInformation"></div>
 
-
-			    <div class="form_row full">
-                    <label>Nombre:</label>
-                    <input type="text" class="form_input required" name="rsvpname" id="daddadsa"/>
-                 </div>
-                 <div class="checkbox_container left13_first">
-                 <input type="checkbox" id="c1" name="c1" value="Wedding Ceremony" checked>
-                 <label for="c1">Vegetariano</label>
-                 </div>
-                 <div class="checkbox_container left13">
-                 <input type="checkbox" id="c2" name="c2" value="Church Ceremony">
-                 <label for="c2">Diab&eacute;tico</label>
-                 </div>
-                 <div class="checkbox_container left13_last">
-                 <input type="checkbox" id="c3" name="c3" value="Ring Ceremony">
-                 <label for="c3">Borracho por convicci&oacute;n</label>
-                 </div>
-                 
-                 
-			    <div class="form_row full">
-                    <label>Nombre:</label>
-                    <input type="text" class="form_input required" name="rsvpname" id="daddadsa"/>
-                 </div>
-                 <div class="checkbox_container left13_first">
-                 <input type="checkbox" id="c1" name="c1" value="Wedding Ceremony" checked>
-                 <label for="c1">Vegetariano</label>
-                 </div>
-                 <div class="checkbox_container left13">
-                 <input type="checkbox" id="c2" name="c2" value="Church Ceremony">
-                 <label for="c2">Diab&eacute;tico</label>
-                 </div>
-                 <div class="checkbox_container left13_last">
-                 <input type="checkbox" id="c3" name="c3" value="Ring Ceremony">
-                 <label for="c3">Borracho por convicci&oacute;n</label>
-                 </div>
-                 
-                 
                  
              </div>
                 
@@ -249,6 +193,7 @@ return false;
 }
 </script>  
 <script type="text/javascript" src="js/google-helper.js"></script>
+<script type="text/javascript" src="js/rsvp.js"></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbG36j_XKchUFTvRcAgZoNzlOzeg2lRIk&libraries=places&callback=initAutocomplete"></script>
 
 </body>
