@@ -19,5 +19,27 @@ function initAutocomplete() {
 function fillInAddress(a,b,c) {
  var iframe = document.getElementById('routeToEventIframe');
  var selectedStartPoint = document.getElementById('start_point_location').value;
+ 
+ refreshTrafficTime(selectedStartPoint);
+ 
  iframe.src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAbG36j_XKchUFTvRcAgZoNzlOzeg2lRIk&origin=" + selectedStartPoint + "&destination=Cariva+Eventos&waypoints=Capilla+ermita+de+santa+cruz"
+}
+
+function refreshTrafficTime(startPoint){
+	var endPoint = new google.maps.LatLng(6.2508654,-75.5024863);
+
+	var service = new google.maps.DistanceMatrixService();
+	service.getDistanceMatrix(
+	  {
+	    origins: [startPoint],
+	    destinations: [endPoint],
+	    travelMode: google.maps.TravelMode.DRIVING
+	  }, callback);
+
+	function callback(response, status) {
+	  var expectedTime = response.rows[0].elements[0].duration.value;
+	  $("#estimatedTimeSpot").empty();
+	  $("#estimatedTimeSpot").append("" + Math.round(expectedTime/60) + " minutos");
+	}
+	$("#trafficResultDiv").css("visibility", "visible");
 }

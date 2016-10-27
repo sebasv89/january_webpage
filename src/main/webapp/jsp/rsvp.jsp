@@ -90,10 +90,8 @@
                     <label>INSERTA LA DIRECCI&Oacute;N DE TU PUNTO DE SALIDA (TU CASA O UN SITIO CONOCIDO CERCANO)</label>
                     <input type="text" class="form_input required" name="rsvpname" id="start_point_location"/>
                     </div>
-                    <div class="form_row_full">
-                    Tiempo estimado de viaje seg&uacute;n el tr&aacute;fico estimado el d&iacute;a de la boda: 46 minutos.
-                    <br/><br/>
-                    Te recomendamos que salgas a las 12:00 para llegar a tiempo.
+                    <div class="form_row_full" id="trafficResultDiv" style="visibility:hidden">
+                    Tiempo estimado de viaje seg&uacute;n el tr&aacute;fico estimado el d&iacute;a de la boda: <span id="estimatedTimeSpot"></span>
                     <br/><br/><br/><br/>
                     A continuaci&oacute;n te presentamos la ruta &oacute;ptima desde tu domicilio hasta la iglesia, y luego hasta el lugar del evento:
                     <br/><br/><br/><br/>
