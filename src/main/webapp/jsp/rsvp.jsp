@@ -50,38 +50,42 @@
                     <label>N&uacute;mero de invitados a confirmar:</label>
                     <div class="select_container">
                     <select class="form_select" id="guests" onchange="setHtmlForInvitedPeople();">
+                    <option value=""></option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
-                    <option value="5+">5+</option>
+                    <option value="5">5</option>
                     </select>
                     </div>
-
-<p></p>
+				</div>
+<p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
               <div class="form_section">
               	  
-                  <h3 class="form_subtitle" id="titleForInfoAtendees">¿CU&Aacute;LES DE ESTAS OPCIONES APLICAN PARA LAS PERSONAS A CONFIRMAR?</h3>
+                  <h3 class="form_subtitle" id="titleForInfoAtendees" style="visibility:hidden">PREFERENCIAS Y NOMBRES DE LOS INVITADOS</h3>
     
-             	<div id="holderForInvitedPeopleInformation"></div>
+             	<div id="holderForInvitedPeopleInformation">
+             	</div>
 
                  
              </div>
                 
-           <h3 class="form_subtitle">DETALLES DE TRANSPORTE</h3>
-                <div class="form_section">
+                <div class="form_section" id="transportationDetails" style="visibility:hidden">
+           			<h3 class="form_subtitle">DETALLES DE TRANSPORTE</h3>
                     <div class="form_row_full">
                     <label>¿LLEVAR&Aacute;S VEH&Iacute;CULO?</label>
                     <div class="select_container">
-                    <select class="form_select" name="guests">
-                    <option value="1">Si - Carro</option>
-                    <option value="2">Si - Moto</option>
-                    <option value="3">Si - Bicicleta</option>
-                    <option value="4">Si - Helic&oacute;ptero</option>
-                    <option value="5+">No</option>
+                    <select class="form_select" name="transportationType" id="transportationType" onchange="transportationTypeChange();">
+                    <option value=""></option>
+                    <option value="CARRO">Si - Carro</option>
+                    <option value="MOTO">Si - Moto</option>
+                    <option value="BICICLETA">Si - Bicicleta</option>
+                    <option value="HELICOPTERO">Si - Helic&oacute;ptero</option>
+                    <option value="NO">No</option>
                     </select>
                     </div>
                     </div>
+                    <div id="carTransportationDetails" style="visibility:hidden">
                     <div class="form_row full">
                     <label>INSERTA LA DIRECCI&Oacute;N DE TU PUNTO DE SALIDA (TU CASA O UN SITIO CONOCIDO CERCANO)</label>
                     <input type="text" class="form_input required" name="rsvpname" id="start_point_location"/>
@@ -102,13 +106,8 @@
                     <input class="" type="hidden" name="subject" value="RSVP form message" />
                     <label id="loader" style="display:none;"><img src="images/loader.gif" alt="Loading..." id="LoadingGraphic" /></label> 
                     </div> 
-               </div>
-                
-   <div class="form_row">
-                    <input type="submit" name="submit" class="form_submit_contact" id="submit" value="SEND RSVP" />
-                    <input class="" type="hidden" name="to"  value="youremail@yourwebsite.com" />
-                    <input class="" type="hidden" name="subject" value="RSVP form message" />
                     </div>
+               </div>
                 
                 </form>
             </div>              
