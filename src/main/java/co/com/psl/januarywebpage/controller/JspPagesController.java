@@ -1,4 +1,4 @@
-package co.com.psl.elitemovie.controller;
+package co.com.psl.januarywebpage.controller;
 
 import java.util.Map;
 
