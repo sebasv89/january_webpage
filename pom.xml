@@ -82,7 +82,6 @@
 			<artifactId>spring-test</artifactId>
 			<version>4.2.5.RELEASE</version>
 		</dependency>
-		
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
@@ -92,11 +91,15 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 		</dependency>
-		
+		<dependency>
+    		<groupId>org.postgresql</groupId>
+    		<artifactId>postgresql</artifactId>
+    		<version>9.4.1208.jre7</version>
+		</dependency>		
 	</dependencies>
 
     <properties>
-        <start-class>co.com.psl.elitemovie.JanuaryWebPageApplication</start-class>
+        <start-class>co.com.psl.januarywebpage.JanuaryWebPageApplication</start-class>
         <cucumber.version>1.2.4</cucumber.version>
     </properties>
 
