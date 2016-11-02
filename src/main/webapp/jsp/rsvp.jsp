@@ -23,9 +23,7 @@
     <nav class="menu">                                                                   
         <ul id="main_menu">
             <li><a href="/">HOME</a></li>
-            <li><a href="/information">INFORMACI&Oacute;N &Uacute;TIL</a>
-            </li>
-            <li><a class="selected" href="/rsvp">RSVP</a></li>
+            <li><a class="selected" href="/rsvp">CONFIRMA TU ASISTENCIA</a></li>
         </ul>
     </nav>
 
