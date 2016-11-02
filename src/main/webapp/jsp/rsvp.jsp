@@ -8,7 +8,7 @@
 <meta name="author" content="FamousThemes" />
 <meta name="description" content="Get in the spotlight" />
 <meta name="keywords" content="premium css templates, premium wordpress themes, famous themes, themeforest" />
-<title>Wedding Bells | Responsive Wedding Template</title>
+<title>Aleja&Sebas - 07.01.2017</title>
 <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
 <link rel="stylesheet" type="text/css" media="all" href="colors/blue.css" />
 <link href='http://fonts.googleapis.com/css?family=Clicker+Script' rel='stylesheet' type='text/css'>
@@ -97,9 +97,7 @@
                     
                     </div>
                     <div class="form_row">
-                    <input type="submit" name="submit" class="form_submit_contact" id="submit" value="SEND RSVP" />
-                    <input class="" type="hidden" name="to"  value="youremail@yourwebsite.com" />
-                    <input class="" type="hidden" name="subject" value="RSVP form message" />
+                    <input type="button" name="submit" class="form_submit_contact" id="submit" value="Confirmar" onclick="submitRsvp();" />
                     <label id="loader" style="display:none;"><img src="images/loader.gif" alt="Loading..." id="LoadingGraphic" /></label> 
                     </div> 
                     </div>

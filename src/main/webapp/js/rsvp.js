@@ -7,7 +7,7 @@ function setHtmlForInvitedPeople(){
 	for (var i=0; i < numberOfPeople; i++){
 		var htmlToAppend="<div class='form_row full'>"+
 		"<label>Nombre:</label>"+
-		"<input type='text' class='form_input required' name='rsvpname" + i + "'/>"+
+		"<input type='text' class='form_input required' name='rsvpname" + i + "' id='rsvpname" + i + "'/>"+
 		"</div>"+
 		"<div class='checkbox_container left13_first'>"+
 		"<input type='checkbox' id='c1" + i + "' name='c1" + i + "' value='vegetarian'>"+
@@ -51,8 +51,37 @@ function transportationTypeChange(){
 	}
 }
 
-function submit(){
-//	#guests
+function submitRsvp(){
+	var response = {};
+	var numberOfPeople = $("#guests")[0].value;
+	var transportationType = $("#transportationType")[0].value;
+	response.numberOfGuests = numberOfPeople;
+	response.guestDetails = [];
+	for (var i=0; i < numberOfPeople; i++){
+		var guestName = $("#rsvpname" + i)[0].value;
+		var isVegetarian = $("#c1" + i)[0].checked;
+		var isDiabetic = $("#c2" + i)[0].checked;
+		var isDrinker = $("#c3" + i)[0].checked;
+		var detail = {name : guestName, isVegetarian : isVegetarian, isDiabetic : isDiabetic, isDrinker : isDrinker};
+		response.guestDetails.push(detail);
+	}
+	if (transportationType === "CARRO"){
+		response.bringsCar = true;
+	} else {
+		response.bringsCar = false;
+	}
+	response.assistToParty = $("#partyCheckboxYes")[0].checked;
+	
+	$.ajax({
+		  type: "POST",
+		  url: "submitrsvp",
+		  data: JSON.stringify(response),
+		  complete: function(){
+			  alert("Gracias por confirmar. Nos vemos!");
+		  },
+		  dataType: "application/json",
+		  contentType: "application/json"
+		});
 	
 }
 
