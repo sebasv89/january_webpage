@@ -4,18 +4,18 @@ public class RsvpResponseDto {
 
 	private int numberOfGuests;
 	private ResponseGuestDetail[] guestDetails;
-	private boolean assistingToParty;
-	private boolean bringsCar;
+	private String assistingToParty;
+	private String bringsCar;
 
-	public boolean bringsCar() {
+	public String bringsCar() {
 		return bringsCar;
 	}
 
-	public boolean getBringsCar() {
+	public String getBringsCar() {
 		return bringsCar;
 	}
 
-	public void setBringsCar(boolean bringsCar) {
+	public void setBringsCar(String bringsCar) {
 		this.bringsCar = bringsCar;
 	}
 
@@ -35,11 +35,11 @@ public class RsvpResponseDto {
 		this.guestDetails = guestDetails;
 	}
 
-	public boolean isAssistingToParty() {
+	public String isAssistingToParty() {
 		return assistingToParty;
 	}
 
-	public void setAssistingToParty(boolean assistingToParty) {
+	public void setAssistingToParty(String assistingToParty) {
 		this.assistingToParty = assistingToParty;
 	}
 

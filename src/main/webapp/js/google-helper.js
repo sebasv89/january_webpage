@@ -21,8 +21,8 @@ function fillInAddress(a,b,c) {
  var selectedStartPoint = document.getElementById('start_point_location').value;
  
  refreshTrafficTime(selectedStartPoint);
- 
- iframe.src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAbG36j_XKchUFTvRcAgZoNzlOzeg2lRIk&origin=" + selectedStartPoint + "&destination=Cariva+Eventos&waypoints=Capilla+ermita+de+santa+cruz"
+ selectedStartPoint = selectedStartPoint.split(' ').join('+');
+ iframe.src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAbG36j_XKchUFTvRcAgZoNzlOzeg2lRIk&origin=" + selectedStartPoint + "&destination=Cariva+Eventos&waypoints=6.2508654,-75.5024863"
 }
 
 function refreshTrafficTime(startPoint){

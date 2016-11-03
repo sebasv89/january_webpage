@@ -4,11 +4,11 @@ public class ResponseGuestDetail {
 
 	private String name;
 
-	private boolean isVeggie;
+	private String isVeggie;
 
-	private boolean isDiabetic;
+	private String isDiabetic;
 
-	private boolean isDrinker;
+	private String isDrinker;
 
 	public String getName() {
 		return name;
@@ -18,27 +18,27 @@ public class ResponseGuestDetail {
 		this.name = name;
 	}
 
-	public boolean isVeggie() {
+	public String getIsVeggie() {
 		return isVeggie;
 	}
 
-	public void setVeggie(boolean isVeggie) {
+	public void setIsVeggie(String isVeggie) {
 		this.isVeggie = isVeggie;
 	}
 
-	public boolean isDiabetic() {
+	public String getIsDiabetic() {
 		return isDiabetic;
 	}
 
-	public void setDiabetic(boolean isDiabetic) {
+	public void setIsDiabetic(String isDiabetic) {
 		this.isDiabetic = isDiabetic;
 	}
 
-	public boolean isDrinker() {
+	public String getIsDrinker() {
 		return isDrinker;
 	}
 
-	public void setDrinker(boolean isDrinker) {
+	public void setIsDrinker(String isDrinker) {
 		this.isDrinker = isDrinker;
 	}
 

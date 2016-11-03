@@ -83,7 +83,11 @@
                     </select>
                     </div>
                     </div>
-                    <div id="carTransportationDetails" style="visibility:hidden">
+                    <div class="form_row" id="submitButtonDiv" style="visibility:hidden">
+                    <input type="button" name="submit" class="form_submit_contact" id="submit" value="Confirmar" onclick="submitRsvp();" />
+                    <label id="loader" style="display:none;"><img src="images/loader.gif" alt="Loading..." id="LoadingGraphic" /></label> 
+                    </div> 
+                    <div  id="carTransportationDetails" style="visibility:hidden">
                     <div class="form_row full">
                     <label>INSERTA LA DIRECCI&Oacute;N DE TU PUNTO DE SALIDA (TU CASA O UN SITIO CONOCIDO CERCANO)</label>
                     <input type="text" class="form_input required" name="rsvpname" id="start_point_location"/>

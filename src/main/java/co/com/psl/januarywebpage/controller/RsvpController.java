@@ -54,11 +54,11 @@ public class RsvpController {
 		String sql = "INSERT INTO public.rsvp(name, is_vegetarian, is_diabetic, is_drinker, assist_to_party, brings_car, rsvp_date) VALUES (?, ?, ?, ?, ?, ?, ?);";
 		PreparedStatement ps = con.prepareStatement(sql);
 		ps.setString(1, guestDetail.getName());
-		ps.setBoolean(2, guestDetail.isVeggie());
-		ps.setBoolean(3, guestDetail.isDiabetic());
-		ps.setBoolean(4, guestDetail.isDrinker());
-		ps.setBoolean(5, dto.isAssistingToParty());
-		ps.setBoolean(6, dto.bringsCar());
+		ps.setBoolean(2, Boolean.parseBoolean(guestDetail.getIsVeggie()));
+		ps.setBoolean(3, Boolean.parseBoolean(guestDetail.getIsDiabetic()));
+		ps.setBoolean(4, Boolean.parseBoolean(guestDetail.getIsDrinker()));
+		ps.setBoolean(5, Boolean.parseBoolean(dto.isAssistingToParty()));
+		ps.setBoolean(6, Boolean.parseBoolean(dto.bringsCar()));
 		ps.setDate(7, new java.sql.Date(Calendar.getInstance().getTimeInMillis()));
 		return ps;
 	}

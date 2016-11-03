@@ -47,7 +47,11 @@ function setHtmlForInvitedPeople(){
 function transportationTypeChange(){
 	var transportationType = $("#transportationType")[0].value;
 	if (transportationType !== "" && transportationType !== "NO"){
+		$("#submitButtonDiv").css("visibility", "hidden");
 		$("#carTransportationDetails").css("visibility", "visible");
+	} else {
+		$("#carTransportationDetails").css("visibility", "hidden");
+		$("#submitButtonDiv").css("visibility", "visible");
 	}
 }
 
@@ -62,7 +66,7 @@ function submitRsvp(){
 		var isVegetarian = $("#c1" + i)[0].checked;
 		var isDiabetic = $("#c2" + i)[0].checked;
 		var isDrinker = $("#c3" + i)[0].checked;
-		var detail = {name : guestName, isVegetarian : isVegetarian, isDiabetic : isDiabetic, isDrinker : isDrinker};
+		var detail = {name : guestName, isVeggie : isVegetarian, isDiabetic : isDiabetic, isDrinker : isDrinker};
 		response.guestDetails.push(detail);
 	}
 	if (transportationType === "CARRO"){
@@ -70,14 +74,16 @@ function submitRsvp(){
 	} else {
 		response.bringsCar = false;
 	}
-	response.assistToParty = $("#partyCheckboxYes")[0].checked;
+	response.assistingToParty = $("#partyCheckboxYes")[0].checked;
 	
 	$.ajax({
 		  type: "POST",
 		  url: "submitrsvp",
 		  data: JSON.stringify(response),
 		  complete: function(){
-			  alert("Gracias por confirmar. Nos vemos!");
+			  alert("Haz confirmado tu asistencia exitosamente. Nos vemos el 7 de Enero!");
+			  window.location = '/';
+
 		  },
 		  dataType: "application/json",
 		  contentType: "application/json"
