@@ -63,6 +63,13 @@ function submitRsvp(){
 	response.guestDetails = [];
 	for (var i=0; i < numberOfPeople; i++){
 		var guestName = $("#rsvpname" + i)[0].value;
+		
+		if (isEmpty(guestName)){
+			alert("Por favor indica el nombre del invitado " + (i+1));
+			$("#rsvpname" + i).focus();
+			return;
+		}
+		
 		var isVegetarian = $("#c1" + i)[0].checked;
 		var isDiabetic = $("#c2" + i)[0].checked;
 		var isDrinker = $("#c3" + i)[0].checked;
@@ -91,4 +98,7 @@ function submitRsvp(){
 	
 }
 
+function isEmpty(str) {
+    return (!str || 0 === str.length);
+}
 
