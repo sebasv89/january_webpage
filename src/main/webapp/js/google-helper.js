@@ -39,7 +39,7 @@ function refreshTrafficTime(startPoint){
 	function callback(response, status) {
 	  var expectedTime = response.rows[0].elements[0].duration.value;
 	  $("#estimatedTimeSpot").empty();
-	  $("#estimatedTimeSpot").append("" + Math.round(expectedTime/60) + " minutos");
+	  $("#estimatedTimeSpot").append("" + (Math.round(expectedTime/60) + 10) + " minutos");
 	}
 	$("#trafficResultDiv").css("visibility", "visible");
 }

@@ -6,21 +6,21 @@ function setHtmlForInvitedPeople(){
 	
 	for (var i=0; i < numberOfPeople; i++){
 		var htmlToAppend="<div class='form_row full'>"+
-		"<label>Nombre:</label>"+
+		"<label>Nombre del invitado " + (i+1) + ":</label>"+
 		"<input type='text' class='form_input required' name='rsvpname" + i + "' id='rsvpname" + i + "'/>"+
 		"</div>"+
 		"<div class='checkbox_container left13_first'>"+
 		"<input type='checkbox' id='c1" + i + "' name='c1" + i + "' value='vegetarian'>"+
-		"<label for='c1" + i + "'>Vegetariano</label>"+
+		"<label for='c1" + i + "'>¿Es Vegetariano/Vegetariana?</label>"+
 		"</div>"+
 		"<div class='checkbox_container left13'>"+
 		"<input type='checkbox' id='c2" + i + "' name='c2" + i + "' value='diabetic'>"+
-		"<label for='c2" + i + "'>Diab&eacute;tico</label>"+
+		"<label for='c2" + i + "'>¿Es Diab&eacute;tico/Diab&eacute;tica?</label>"+
 		"</div>"+
 		"<div class='checkbox_container left13_last'>"+
 		"<input type='checkbox' id='c3" + i + "' name='c3" + i + "' value='drinker'>"+
-		"<label for='c3" + i + "'>Bebedor Empedernido</label>"+
-		"</div>";
+		"<label for='c3" + i + "'>¿Es un Bebedor Empedernido(a)?</label>"+
+		"<br/><br/><br/><br/></div>";
 		$("#holderForInvitedPeopleInformation").append(htmlToAppend);
 	}
 	

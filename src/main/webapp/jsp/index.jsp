@@ -50,7 +50,7 @@
    <div class="countdown_container">
        <h2 class="centered_title">Cuenta regresiva al matrimonio:</h2>
        <div id="defaultCountdown"></div>
-       <div class="rsvp_button"><span class="swirl_left_small"><span class="swirl_right_small"><a href="/rsvp">Confirma tu asistencia dando click aqu&iacute;</a></span></span></div>
+       <div class="rsvp_button"><span class="swirl_left_small"><span class="swirl_right_small"><a href="/rsvp">Confirma tu asistencia antes de Diciembre 1 dando click aqu&iacute;</a></span></span></div>
    </div>
 
 

@@ -32,7 +32,7 @@
       <div class="page_header_trans">
                <div class="page_header_title">
                <h1>Confirma tu asistencia</h1>
-<p>Buscando que tengas la mejor experiencia en nuestro matrimonio, tenemos algunas preguntas para hacerte. Por favor se honesto con tus respuestas, esta pareja no promueve las mentiras.</p>
+<p>Buscando que tengas la mejor experiencia en nuestro matrimonio, tenemos algunas preguntas para hacerte. Te agradecemos nos confirmes tu asistencia en este medio antes del primero de Diciembre.</p>
                </div>
        </div>
    </div>
@@ -60,7 +60,7 @@
 <p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>
               <div class="form_section">
               	  
-                  <h3 class="form_subtitle" id="titleForInfoAtendees" style="visibility:hidden">PREFERENCIAS Y NOMBRES DE LOS INVITADOS</h3>
+                  <h3 class="form_subtitle" id="titleForInfoAtendees" style="visibility:hidden">INGRESA LOS DATOS DE LOS INVITADOS</h3>
     
              	<div id="holderForInvitedPeopleInformation">
              	</div>
@@ -89,7 +89,7 @@
                     </div> 
                     <div  id="carTransportationDetails" style="visibility:hidden">
                     <div class="form_row full">
-                    <label>INSERTA LA DIRECCI&Oacute;N DE TU PUNTO DE SALIDA (TU CASA O UN SITIO CONOCIDO CERCANO)</label>
+                    <label>INSERTA UN LUGAR CONOCIDO CERCANO A TU PUNTO DE PARTIDA EL D&Iacute;A DE LA BODA (un centro comercial, almacen, escuela, etc.)</label>
                     <input type="text" class="form_input required" name="rsvpname" id="start_point_location"/>
                     </div>
                     <div class="form_row_full" id="trafficResultDiv" style="visibility:hidden">
