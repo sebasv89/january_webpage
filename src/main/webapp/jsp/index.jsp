@@ -24,7 +24,6 @@
     <nav class="menu">                                                                   
         <ul id="main_menu">
             <li><a class="selected" href="/">HOME</a></li>
-            <li><a href="/rsvp">CONFIRMA TU ASISTENCIA</a></li>
         </ul>
     </nav>
 
@@ -48,9 +47,13 @@
             </div>
    </div>
    <div class="countdown_container">
-       <h2 class="centered_title">Cuenta regresiva al matrimonio:</h2>
+       <div class="rsvp_button"><span class="swirl_left_small"><span class="swirl_right_small" style="color:#FFFFFF;">Navega hasta la capilla con:</span></span></div>
+       <div class="centered_title" style="text-align:center">
+       <a href="waze://?ll=6.277355, -75.496268&navigate=yes"><img src="images/wazeimage.png"  style="width:150px;height:150px" ></a>
+       <a href="http://maps.apple.com/?q=6.277355, -75.496268"><img src="images/googlemaps.png"  style="width:150px;height:150px" ></a>
+       </div>
+              <h2 class="centered_title">Cuenta regresiva al matrimonio:</h2>
        <div id="defaultCountdown"></div>
-       <div class="rsvp_button"><span class="swirl_left_small"><span class="swirl_right_small"><a href="/rsvp">Confirma tu asistencia antes de Diciembre 1 dando click aqu&iacute;</a></span></span></div>
    </div>
 
 
