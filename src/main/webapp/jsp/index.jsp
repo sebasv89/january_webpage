@@ -47,15 +47,21 @@
             </div>
    </div>
    <div class="countdown_container">
-       <div class="rsvp_button"><span class="swirl_left_small"><span class="swirl_right_small" style="color:#FFFFFF;">Navega hasta la capilla con:</span></span></div>
+       <div class="rsvp_button"><span class="swirl_left_small"><span class="swirl_right_small" style="color:#FFFFFF;">Navega primero hasta la capilla con:</span></span></div>
        <div class="centered_title" style="text-align:center">
        <a href="waze://?ll=6.277355, -75.496268&navigate=yes"><img src="images/wazeimage.png"  style="width:150px;height:150px" ></a>
        <a href="http://www.google.com/maps/place/6.277355,-75.496268"><img src="images/googlemaps.png"  style="width:150px;height:150px" ></a>
        </div>
-              <h2 class="centered_title">Cuenta regresiva al matrimonio:</h2>
+   </div>
+   <div class="countdown_container">
+       <div class="rsvp_button"><span class="swirl_left_small"><span class="swirl_right_small" style="color:#FFFFFF;">Y <b>luego</b> navega al lugar del evento con:</span></span></div>
+       <div class="centered_title" style="text-align:center">
+       <a href="waze://?ll=6.2299228,-75.4843597&navigate=yes"><img src="images/wazeimage.png"  style="width:150px;height:150px" ></a>
+       <a href="http://www.google.com/maps/place/6.2299228,-75.4843597"><img src="images/googlemaps.png"  style="width:150px;height:150px" ></a>
+       </div>
+		<h2 class="centered_title">Cuenta regresiva al matrimonio:</h2>
        <div id="defaultCountdown"></div>
    </div>
-
 
   
   <div class="home_bottom">
